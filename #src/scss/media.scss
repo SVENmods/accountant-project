@@ -1,0 +1,39 @@
+
+@media only screen and (max-width : 780px) {
+     .services{
+          .services-wrapper{
+            flex-direction: column;
+            // max-width: 389px;
+            // min-height: 600px;
+            padding-bottom: 40px;
+            max-height: 100%;
+            .services-tabs{
+              display: flex;
+              flex-direction: column;
+              padding: 27.5px 20px;
+              max-width: 100%;
+              .button {
+                display: flex;
+                margin: 5px 0px;
+               }
+          }
+            &__content{
+              margin-left: 0;
+              .content {
+               padding-bottom: 0;
+                    p{
+                         max-width: 310px;
+                    }
+                }
+                .service-links-scope{
+                  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+                }
+              }
+              .content-active {
+                display: flex;
+                flex-direction: column;
+              }
+            }
+          }
+         
+}

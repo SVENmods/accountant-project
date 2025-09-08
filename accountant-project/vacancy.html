@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Вакансии</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:image" content="./img/logo.png" />
+	<meta name="description" content="11111.by/" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet" />
+	<!--    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>-->
+	<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+		crossorigin="anonymous"
+	/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+	<!-- CSS only -->
+	<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+		crossorigin="anonymous"
+	/>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css"
+	/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+
+<body>
+     <div class="wrapper">
+          <header class="position-fixed w-100 header">
+	<div class="container">
+		<div class="header__body">
+			<div class="header__logo">
+				<a href="index.html">
+					<img src="./img/logo.png" alt="Логотип" />
+				</a>
+			</div>
+			<nav class="header__nav">
+				<ul class="menu-header">
+					<li class="menu-header__item hover-menu">
+						<span
+							class="menu-header__link button-sub-menu menu-header__services"
+							data-parent="1"
+							onclick="window.open('services-main.html', '_self');"
+						>
+							Услуги
+							<i class="bi bi-chevron-down"></i>
+						</span>
+						<span class="menu-header__link button-sub-menu menu-header__services-sub" data-parent="1">
+							Услуги
+							<i class="bi bi-chevron-down"></i>
+						</span>
+						<div class="submenu-header" data-submenu="1">
+							<button type="button" class="submenu-header__back">
+								<i class="bi-arrow-left me-3 bi"></i>Назад
+							</button>
+							<div class="submenu-header__body">
+								<div class="row g-5">
+									<div class="col-sm-6 col-md-4">
+										<div class="submenu-header__section">
+											<a href="services.html" class="submenu-header__title"
+												>Для ЮРИДИЧЕСКИХ ЛИЦ</a
+											>
+											<ul class="submenu-header__list">
+												<li>
+													<a href="services.html#1" class="submenu-header__link"
+														>Постановка бухгалтерского и налогового учета</a
+													>
+												</li>
+												<li>
+													<a href="services.html#2" class="submenu-header__link"
+														>Комплексный бухгалтерский аутсорсинг</a
+													>
+												</li>
+												<li>
+													<a href="services.html#3" class="submenu-header__link"
+														>Услуги главного бухгалтера</a
+													>
+												</li>
+												<li>
+													<a href="services.html#4" class="submenu-header__link"
+														>Экспертиза бухгалтерского учета</a
+													>
+												</li>
+												<li>
+													<a href="services.html#5" class="submenu-header__link"
+														>Расчет заработной платы</a
+													>
+												</li>
+												<li>
+													<a href="services.html#6" class="submenu-header__link"
+														>Консультирование</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-4">
+										<div class="submenu-header__section">
+											<a href="#" class="submenu-header__title"
+												>Для ИП и физических лиц</a
+											>
+											<ul class="submenu-header__list">
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Комплексный бухгалтерский аутсорсинг</a
+													>
+												</li>
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Расчет заработной платы по наемным сотрудникам</a
+													>
+												</li>
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Консультирование</a
+													>
+												</li>
+											</ul>
+										</div>
+										<div class="submenu-header__section">
+											<a href="#" class="submenu-header__title"
+												>Подготовка и сдача отчетностей</a
+											>
+											<ul class="submenu-header__list">
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Налоговая и бухгалтерская отчетность для ип</a
+													>
+												</li>
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Отчетность для юридических лиц</a
+													>
+												</li>
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Годовая бухгалтерская отчетность</a
+													>
+												</li>
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Отчетноть в ФСЗН и белгосстрах</a
+													>
+												</li>
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Отчетность по налогам</a
+													>
+												</li>
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Иная бухгалтерская и налоговая отчетность</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-4">
+										<div class="submenu-header__section">
+											<a href="#" class="submenu-header__title"
+												>Для иностранных предприятий</a
+											>
+											<ul class="submenu-header__list">
+												<li>
+													<a href="#" class="submenu-header__link">Консалтинг</a>
+												</li>
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Постановка учета в представительстве</a
+													>
+												</li>
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Комплексный аутсорсинг</a
+													>
+												</li>
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Экспертиза учета иностранных предприятий</a
+													>
+												</li>
+											</ul>
+										</div>
+										<div class="submenu-header__section">
+											<a href="#" class="submenu-header__title">Прочие услуги</a>
+											<ul class="submenu-header__list">
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Экспертиза бухгалтерского учета</a
+													>
+												</li>
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Сопровождение при прохождении проверки</a
+													>
+												</li>
+												<li>
+													<a href="#" class="submenu-header__link"
+														>Консультирование</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="menu-header__item hover-menu">
+						<span class="menu-header__link button-sub-menu" data-parent="2">
+							О нас
+							<i class="bi bi-chevron-down"></i>
+						</span>
+						<div class="submenu-header" data-submenu="2">
+							<button type="button" class="submenu-header__back">
+								<i class="bi-arrow-left me-3 bi"></i>Назад
+							</button>
+							<div class="submenu-header__body">
+								<div class="row g-5">
+									<div class="col-md-4">
+										<div class="submenu-header__section">
+											<!-- <a href="about.html" class="submenu-header__title about-submenu">О
+                                                компании</a>
+                                            <a href="reviews.html"
+                                                class="submenu-header__title about-submenu">Отзывы</a>
+                                            <a href="vacancy.html"
+                                                class="submenu-header__title about-submenu">Вакансии</a> -->
+											<ul class="submenu-header__list about-list">
+												<li>
+													<a href="about.html" class="submenu-header__link"
+														>О компании</a
+													>
+												</li>
+												<li>
+													<a href="reviews.html" class="submenu-header__link"
+														>Отзывы</a
+													>
+												</li>
+												<li>
+													<a href="vacancy.html" class="submenu-header__link"
+														>Вакансии</a
+													>
+												</li>
+												<li>
+													<a href="how-work.html" class="submenu-header__link"
+														>Как мы работаем</a
+													>
+												</li>
+												<li>
+													<a href="faq.html" class="submenu-header__link"
+														>Часто задаваемые вопросы</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- <div class="col-md-4">
+                                        <div class="submenu-header__section">
+                                            <a href="#" class="submenu-header__title">Полезная информация</a>
+                                            <ul class="submenu-header__list">
+                                                <li>
+                                                    <a href="how-work.html" class="submenu-header__link">Как мы
+                                                        работаем</a>
+                                                </li>
+                                                <li>
+                                                    <a href="faq.html" class="submenu-header__link">Часто задаваемые
+                                                        вопросы</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> -->
+									<!-- <div class="col-md-4">
+                                        <div class="submenu-header__section">
+                                            <a href="#" class="submenu-header__title">Мы в социальных сетях</a>
+                                        </div>
+                                    </div> -->
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="contact.html" class="menu-header__link"> Контакты </a>
+					</li>
+				</ul>
+				<div class="header__phone">
+					<a href="tel:+375296758568" class="link">+375 29 675 85 68</a>
+				</div>
+				<div class="mt-3 header__social">
+					<ul class="social-links">
+						<li>
+							<a href="#" target="_blank">
+								<svg
+									width="33"
+									height="32"
+									viewBox="0 0 33 32"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M16.5 0C7.3873 0 0 7.16344 0 16C0 24.8366 7.3873 32 16.5 32C25.6127 32 33 24.8366 33 16C33 7.16344 25.6127 0 16.5 0ZM17.9846 15.9988V26H13.9938V15.9992H12V12.5528H13.9938V10.4835C13.9938 7.6719 15.1196 6 18.3182 6H20.9812V9.44685H19.3166C18.0715 9.44685 17.9891 9.92849 17.9891 10.8274L17.9846 12.5524H21L20.6472 15.9988H17.9846Z"
+										fill="white"
+									></path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<svg
+									width="32"
+									height="32"
+									viewBox="0 0 32 32"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM8.65057 13.2559H12.2765V24.1503H8.65057V13.2559ZM12.5157 9.8818C12.4922 8.8136 11.7283 8 10.4879 8C9.24749 8 8.43655 8.8136 8.43655 9.8818C8.43655 10.9279 9.22353 11.7649 10.4408 11.7649H10.464C11.7283 11.7649 12.5157 10.9279 12.5157 9.8818ZM21.1783 13C23.5644 13 25.3531 14.5574 25.3531 17.9037L25.353 24.1503H21.7272V18.3217C21.7272 16.8577 21.2025 15.8587 19.8899 15.8587C18.8881 15.8587 18.2915 16.5322 18.0294 17.1827C17.9335 17.4158 17.91 17.7406 17.91 18.0662V24.1506H14.2836C14.2836 24.1506 14.3314 14.2784 14.2836 13.2561H17.91V14.7992C18.3913 14.0574 19.2532 13 21.1783 13Z"
+										fill="white"
+									></path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<svg
+									width="33"
+									height="32"
+									viewBox="0 0 33 32"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M16.5 0C7.3873 0 0 7.16344 0 16C0 24.8366 7.3873 32 16.5 32C25.6127 32 33 24.8366 33 16C33 7.16344 25.6127 0 16.5 0ZM17.103 22.6988C16.9089 22.9077 16.5299 22.9498 16.5299 22.9498H15.2747C15.2747 22.9498 12.5057 23.1165 10.0663 20.5734C7.40605 17.7987 5.05704 12.2937 5.05704 12.2937C5.05704 12.2937 4.92147 11.9326 5.06834 11.7587C5.23371 11.5622 5.68461 11.5499 5.68461 11.5499L8.6848 11.5303C8.6848 11.5303 8.96725 11.5766 9.1696 11.7258C9.33702 11.8493 9.43048 12.0787 9.43048 12.0787C9.43048 12.0787 9.91528 13.3071 10.5572 14.4181C11.8113 16.5878 12.3947 17.0621 12.8199 16.8296C13.4403 16.4911 13.2544 13.7628 13.2544 13.7628C13.2544 13.7628 13.2657 12.7731 12.9422 12.3318C12.6916 11.9902 12.2191 11.8904 12.0106 11.8626C11.8411 11.84 12.1184 11.447 12.4779 11.2711C13.0182 11.0067 13.9713 10.9913 15.0981 11.0026C15.9763 11.0118 16.2289 11.0664 16.572 11.1497C17.3682 11.3421 17.3433 11.9589 17.2897 13.2899C17.2736 13.688 17.255 14.15 17.255 14.6836C17.255 14.8035 17.2515 14.9313 17.2479 15.0628C17.2293 15.7447 17.208 16.5256 17.6566 16.8162C17.8867 16.9644 18.4485 16.8378 19.8546 14.4469C20.5212 13.3132 21.0204 11.9809 21.0204 11.9809C21.0204 11.9809 21.1303 11.7433 21.2998 11.6414C21.4734 11.5375 21.7075 11.5694 21.7075 11.5694L24.8649 11.5499C24.8649 11.5499 25.8139 11.4357 25.967 11.8657C26.1282 12.3153 25.6126 13.3667 24.3226 15.0889C23.0975 16.7247 22.502 17.3259 22.5582 17.8584C22.5991 18.2466 22.9861 18.5982 23.7279 19.2874C25.2786 20.7295 25.6942 21.4882 25.7941 21.6705C25.8024 21.6856 25.8085 21.6967 25.8129 21.704C26.5083 22.8593 25.0415 22.9498 25.0415 22.9498L22.2365 22.9889C22.2365 22.9889 21.6346 23.1083 20.8417 22.563C20.4263 22.2777 20.0204 21.8115 19.6338 21.3676C19.0435 20.6896 18.498 20.0633 18.0325 20.2112C17.2509 20.4602 17.2745 22.1464 17.2745 22.1464C17.2745 22.1464 17.2807 22.5075 17.103 22.6988Z"
+										fill="white"
+									></path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<svg
+									width="33"
+									height="32"
+									viewBox="0 0 33 32"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M16.5 0C7.3873 0 0 7.16344 0 16C0 24.8366 7.3873 32 16.5 32C25.6127 32 33 24.8366 33 16C33 7.16344 25.6127 0 16.5 0ZM12.1714 6.06042C13.2915 6.01188 13.6493 6 16.501 6H16.4977C19.3502 6 19.7068 6.01188 20.8268 6.06042C21.9446 6.10917 22.7081 6.27771 23.3775 6.525C24.0687 6.78021 24.6528 7.12187 25.2369 7.67812C25.8209 8.23396 26.1797 8.79187 26.4487 9.44958C26.7069 10.0854 26.8841 10.8121 26.9366 11.8767C26.9869 12.9433 27 13.2842 27 16C27 18.7158 26.9869 19.0558 26.9366 20.1225C26.8841 21.1867 26.7069 21.9135 26.4487 22.5496C26.1797 23.2071 25.8209 23.765 25.2369 24.3208C24.6534 24.8771 24.0685 25.2196 23.3781 25.475C22.71 25.7223 21.9462 25.8908 20.8283 25.9396C19.7083 25.9881 19.3515 26 16.4997 26C13.6482 26 13.2906 25.9881 12.1706 25.9396C11.053 25.8908 10.2897 25.7223 9.62166 25.475C8.9315 25.2196 8.34568 24.8771 7.76227 24.3208C7.17842 23.765 6.81966 23.2071 6.55126 22.5494C6.29182 21.9135 6.11484 21.1869 6.06344 20.1223C6.01269 19.0556 6 18.7158 6 16C6 13.2842 6.01312 12.9431 6.06322 11.8765C6.11353 10.8123 6.29072 10.0854 6.55104 9.44938C6.8201 8.79187 7.17886 8.23396 7.76292 7.67812C8.34656 7.12208 8.93237 6.78042 9.62298 6.525C10.2906 6.27771 11.0536 6.10917 12.1714 6.06042Z"
+										fill="white"
+									></path>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M15.4608 8.00244C15.6388 8.00217 15.8303 8.00226 16.037 8.00234L16.3776 8.00244C19.1061 8.00244 19.4295 8.01179 20.5069 8.05856C21.5033 8.10207 22.0441 8.26108 22.4043 8.39467C22.8812 8.57157 23.2212 8.78303 23.5786 9.12463C23.9363 9.46623 24.1577 9.79156 24.3434 10.247C24.4832 10.5907 24.6499 11.1071 24.6953 12.0587C24.7443 13.0876 24.7549 13.3966 24.7549 16.0013C24.7549 18.606 24.7443 18.9151 24.6953 19.9439C24.6497 20.8955 24.4832 21.412 24.3434 21.7556C24.1582 22.2111 23.9363 22.5354 23.5786 22.8768C23.221 23.2184 22.8814 23.4299 22.4043 23.6068C22.0445 23.741 21.5033 23.8996 20.5069 23.9431C19.4297 23.9898 19.1061 24 16.3776 24C13.6488 24 13.3254 23.9898 12.2482 23.9431C11.2518 23.8991 10.7111 23.7401 10.3506 23.6066C9.87372 23.4297 9.53308 23.2182 9.17541 22.8766C8.81774 22.535 8.59633 22.2105 8.41068 21.7548C8.27081 21.4112 8.10411 20.8947 8.05876 19.9431C8.00979 18.9143 8 18.6052 8 15.9989C8 13.3926 8.00979 13.0851 8.05876 12.0563C8.10432 11.1047 8.27081 10.5882 8.41068 10.2442C8.5959 9.78871 8.81774 9.46338 9.17541 9.12178C9.53308 8.78019 9.87372 8.56872 10.3506 8.39141C10.7108 8.25722 11.2518 8.09862 12.2482 8.0549C13.1909 8.01423 13.5562 8.00203 15.4608 8V8.00244ZM21.8325 9.6226C21.1555 9.6226 20.6062 10.1466 20.6062 10.7934C20.6062 11.44 21.1555 11.9646 21.8325 11.9646C22.5095 11.9646 23.0588 11.44 23.0588 10.7934C23.0588 10.1468 22.5095 9.6226 21.8325 9.6226ZM11.1296 16.004C11.1296 13.2361 13.4793 10.9919 16.3774 10.9918C19.2756 10.9918 21.6247 13.236 21.6247 16.004C21.6247 18.7719 19.2758 21.0151 16.3776 21.0151C13.4794 21.0151 11.1296 18.7719 11.1296 16.004Z"
+										fill="white"
+									></path>
+									<path
+										d="M16.4 12.6001C18.2224 12.6001 19.7 14.0775 19.7 15.9001C19.7 17.7225 18.2224 19.2001 16.4 19.2001C14.5773 19.2001 13.1 17.7225 13.1 15.9001C13.1 14.0775 14.5773 12.6001 16.4 12.6001Z"
+										fill="white"
+									></path>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__consultation">
+					<a href="#" class="button button_white"> Консультация </a>
+				</div>
+				<div></div>
+			</nav>
+			<button type="button" class="button-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<div class="header__overflow"></div>
+		</div>
+	</div>
+</header>
+
+          <main class="page container vacancy">
+               <section class="section mt-4" style="margin-bottom: 0;">
+                    <div class="links-line">
+                         <a href="main.html">Главная</a>
+                         <span>/</span>
+                         <a class="links-line__active">Вакансии</a>
+                    </div>
+               </section>
+               <section class="section mt-4">
+                    <div class="main-content">
+                         <h1 class="main-content__title">Вакансии</h1>
+                    </div>
+               </section>
+               <section class="section w-100 d-flex align-items-center justify-content-center">
+                    <div class="vacancy-placeholder">
+                         <span>На данный момент у нас нет открытых вакансий :(</span>
+                    </div>
+               </section>
+
+               <section class="section vacancy-block">
+                    <div id="accordion">
+                         <div id="questionsAccordion">
+
+                              <div class="item-accordion">
+                                   <h4 id="heading-2">
+                                        <button class="item-accordion__button collapsed" type="button"
+                                             data-bs-toggle="collapse" data-bs-target="#collapse-2"
+                                             aria-expanded="false" aria-controls="collapse-2">
+                                             <span class="item-accordion__button_text">Ведущий бухгалтер (главный
+                                                  бухгалтер) на аутсорсинг</span>
+                                             <span class="item-accordion__button_icon"></span>
+                                        </button>
+                                   </h4>
+                                   <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                                        data-bs-parent="#questionsAccordion" style="">
+                                        <div class="item-accordion__body">
+                                             <div>
+                                                  <p>
+                                                       <span class="vacancy-headline">Требуемый опыт работы:</span> 1–3
+                                                       года
+                                                  </p>
+                                                  <p>
+                                                       Полная занятость, полный день
+                                                  </p>
+                                             </div>
+                                             <div>
+                                                  <span class="vacancy-headline">Должностные обязанности:</span>
+                                                  <ul>
+
+                                                       <li>ведение бухгалтерского и налогового учета небольших
+                                                            предприятий;</li>
+                                                       <li>постановка задачи и контроль за работой своих подчиненных 2-3
+                                                            человека (бухгалтеров закрепленных за предприятиями, которые
+                                                            осуществляют полное ведение всех участков бухгалтерского
+                                                            учета);</li>
+                                                       <li>расчет налогов, подготовка бухгалтерской, налоговой и
+                                                            статистической отчетности;</li>
+                                                       <li>консультирование клиентов по
+                                                            бухгалтерским вопросам.</li>
+                                                  </ul>
+                                             </div>
+                                             <div>
+                                                  <span class="vacancy-headline">Условия:</span>
+                                                  <ul>
+                                                       <li>возможность совершенствования профессиональных знаний и
+                                                            умений;</li>
+                                                       <li>информационно-техническая поддержка со стороны юристов,
+                                                            аудиторов
+                                                            и консультационных баз;</li>
+                                                       <li>перспектива карьерного роста;</li>
+                                                       <li>чай кофе за счет компании;</li>
+                                                       <li>уютный, офис возле метро;</li>
+                                                       <li>дружный женский коллектив;</li>
+                                                       <li>оплата отпусков.</li>
+                                                  </ul>
+                                             </div>
+                                             <div>
+                                                  <span class="vacancy-headline">Требования к кандидату:</span>
+                                                  <ul>
+                                                       <li>опыт работы главным бухгалтером, заместителем главного
+                                                            бухгалтера
+                                                            либо управлением бухгалтерии на предприятии;</li>
+                                                       <li>профессиональное образование приветствуется (предпочтение
+                                                            отдается опыту работы);</li>
+                                                       <li>желание развиваться и учиться новым навыкам.
+                                                            знание программ 1С версии 7.7 и 8 MS Office, налогового
+                                                            законодательства РБ;</li>
+                                                       <li>ответственность, самостоятельность, коммуникабельность.</li>
+                                                  </ul>
+                                             </div>
+                                             <div>
+                                                  <p>
+                                                       <span class="vacancy-headline">График работы: </span> пн – чт с
+                                                       8.45 до 17.30, пт с 8.45
+                                                       до 16.00;
+                                                  </p>
+                                             </div>
+                                             <div>
+                                                  <p>
+                                                       <span class="vacancy-headline">Зарплата: </span> от 1 100 руб.
+                                                  </p>
+                                             </div>
+                                             <div>
+                                                  <a href="#" class="button" type="button" data-bs-toggle="modal"
+                                                       data-bs-target="#formModal">Откликнуться на вакансию</a>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="item-accordion">
+                                   <h4 id="heading-3">
+                                        <button class="item-accordion__button collapsed" type="button"
+                                             data-bs-toggle="collapse" data-bs-target="#collapse-3"
+                                             aria-expanded="false" aria-controls="collapse-3">
+                                             <span class="item-accordion__button_text">Бухгалтер-калькулятор</span>
+                                             <span class="item-accordion__button_icon"></span>
+                                        </button>
+                                   </h4>
+                                   <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3"
+                                        data-bs-parent="#questionsAccordion" style="">
+                                        <div class="item-accordion__body">
+                                             Тут пока ничего
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- modal -->
+                    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel"
+                         aria-hidden="true">
+                         <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                   <div class="modal-header">
+                                        <h5 class="modal-title ms-0 ps-1" id="formModalLabel">
+                                             Хочу работать с вами
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                             aria-label="Close"></button>
+                                   </div>
+                                   <div class="modal-body px-4 pb-4 pt-0">
+                                        <form action="/" id="feedbackForm" class="feedback-form">
+                                             <div class="mb-4">
+                                                  <div class="input error">
+                                                       <label class="feedback-label" for="name">Ваше имя</label>
+                                                       <input type="text" id="name" name="name" class="_required"
+                                                            placeholder="Иван Иванович">
+                                                       <div class="input__text-error">Поле не может быть пустым</div>
+                                                  </div>
+                                             </div>
+                                             <div class="mb-4">
+                                                  <div class="input">
+                                                       <label class="feedback-label" for="phone">Ваш телефон</label>
+                                                       <input type="phone" id="phone" name="phone" class="_required"
+                                                            placeholder="+375 (00) 000 00 00">
+                                                       <div class="input__text-error">Поле не может быть пустым</div>
+                                                  </div>
+                                             </div>
+                                             <div class="mb-4">
+                                                  <div class="input ">
+                                                       <label class="feedback-label" for="mail">Ваш email</label>
+                                                       <input type="mail" id="mail" name="mail" class="_required"
+                                                            placeholder="example@gmail.com"
+                                                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                                       <div class="input__text-error">Поле не может быть пустым</div>
+                                                  </div>
+                                             </div>
+                                             <div class="mb-4">
+                                                  <div class="textarea">
+                                                       <label class="feedback-label" for="question">Сопроводительное
+                                                            письмо</label>
+                                                       <textarea name="question" id="question"
+                                                            placeholder="Текст сопроводительного письма"></textarea>
+                                                  </div>
+                                             </div>
+                                             <div class="mb-4">
+                                                  <div class="input ">
+                                                       <label class="feedback-label" for="mail">Ваше резюме</label>
+                                                       <div class="input-file form-group files">
+                                                            <input type="file" name="file" id="file"
+                                                                 onchange='uploadFile(this)' class="_required">
+                                                            <label for="file">
+                                                                 <svg width="9" height="20" viewBox="0 0 9 20"
+                                                                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                      <path d="M0.125 3.75C0.125 2.02411 1.52411 0.625 3.25 0.625C4.97589 0.625 6.375 2.02411 6.375 3.75V15C6.375 16.0355 5.53553 16.875 4.5 16.875C3.46447 16.875 2.625 16.0355 2.625 15V6.25C2.625 5.90482 2.90482 5.625 3.25 5.625C3.59518 5.625 3.875 5.90482 3.875 6.25V15C3.875 15.3452 4.15482 15.625 4.5 15.625C4.84518 15.625 5.125 15.3452 5.125 15V3.75C5.125 2.71447 4.28553 1.875 3.25 1.875C2.21447 1.875 1.375 2.71447 1.375 3.75V15C1.375 16.7259 2.77411 18.125 4.5 18.125C6.22589 18.125 7.625 16.7259 7.625 15V6.25C7.625 5.90482 7.90482 5.625 8.25 5.625C8.59518 5.625 8.875 5.90482 8.875 6.25V15C8.875 17.4162 6.91625 19.375 4.5 19.375C2.08375 19.375 0.125 17.4162 0.125 15V3.75Z"
+                                                                           fill="#BABABA" />
+                                                                 </svg>
+
+                                                                 <span id="file-name">Прикрепите документ</span>
+                                                            </label>
+
+                                                       </div>
+                                                       <div class="input__text-error">Поле не может быть пустым
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div class="mb-4">
+                                                  <div class="checkbox">
+                                                       <input type="checkbox" id="personal-data" class="_required">
+                                                       <label class="checkbox__label" for="personal-data">
+                                                            <span class="checkbox__label_text">Согласие на обработку <a
+                                                                      href="#" target="_blank">персональных
+                                                                      данных</a></span>
+                                                       </label>
+                                                  </div>
+                                             </div>
+                                             <div class="feedback-form__button">
+                                                  <button type="submit" class="button w-100">Отправить запрос</button>
+                                             </div>
+                                        </form>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- modal -->
+               </section>
+               <section class="section row img-prev-vacancy">
+                    <div class="col-md-6 mt-3">
+                         <img src="./img/about/about-img-prev.png" alt="about-img-prev">
+                    </div>
+                    <div class="col-md-6 mt-3">
+                         <h2 class="h2">Хотите работать с нами?</h2>
+                         <p>Если Вы не нашли подходящую для себя вакансию, но хотите работать у нас — отправьте свое
+                              резюме. Как только у нас появится соответствующее предложение, мы свяжемся с Вами
+                         </p>
+                         <a href="#" class="button mt-3" type="button" data-bs-toggle="modal"
+                              data-bs-target="#formModal">Отправить резюме</a>
+                    </div>
+               </section>
+
+          </main>
+          <footer class="footer">
+	<button class="btn-floating scrollup" id="scrollup">
+		<div class="arrow"></div>
+	</button>
+	<div class="container">
+		<div class="footer-top mb-0 footer__top">
+			<div class="row">
+				<div class="my-3 col-lg-4">
+					<div class="footer-top__section">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="footer-top__title">О нас</div>
+							</div>
+							<div class="col-lg-7">
+								<ul class="footer-top__list ms-lg-2">
+									<li>
+										<a href="#">О компании</a>
+									</li>
+									<li>
+										<a href="#">Как мы работаем</a>
+									</li>
+									<li>
+										<a href="#">Отзывы</a>
+									</li>
+									<li>
+										<a href="#">Часто задаваемые вопросы</a>
+									</li>
+									<li>
+										<a href="#">Вакансии</a>
+									</li>
+									<li>
+										<a href="#">Документы</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="my-3 col-lg-4">
+					<div class="footer-top__section">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="footer-top__title">Услуги</div>
+							</div>
+							<div class="col-lg-7">
+								<ul class="footer-top__list ms-lg-2">
+									<li>
+										<a href="#">Для малого и среднего бизнеса</a>
+									</li>
+									<li>
+										<a href="#">Для ИП и физических лиц</a>
+									</li>
+									<li>
+										<a href="#">Для иностранных предприятий</a>
+									</li>
+									<li>
+										<a href="#">Подготовка и сдача отчетностей</a>
+									</li>
+									<li>
+										<a href="#">Прочие услуги</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="my-3 col-lg-4">
+					<div class="footer-top__section row">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="footer-top__title">Контакты</div>
+							</div>
+							<div class="col-lg-7">
+								<ul class="footer-top__list ms-lg-2">
+									<li>
+										<a href="#" target="_blank">г. Минск, ул. Неизвестная, 14, офис 1</a>
+									</li>
+									<li>
+										<a href="tel:+375291111111">+375 11 111 11 11</a>
+									</li>
+									<li>
+										<a href="mailto:info@11111.by" class="text-decoration-underline"
+											>info@11111.by</a
+										>
+									</li>
+									<li class="">
+										<a href="#" target="_blank">Политика в отношении обработки куки</a>
+									</li>
+									<li class="">
+										<a href="#" target="_blank"
+											>Политика в отношении обработки персональных данных</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="my-3 pe-lg-4 col-12">
+					<div
+						class="d-flex flex-row flex-wrap align-items-center justify-content-between w-100 pay-banner"
+					>
+						<span class="my-2">Способы оплаты</span>
+						<div class="d-flex flex-row gap-2 my-2 pay-banner__logos">
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<img src="./img/logo-assist.png" alt="logo-assist" />
+							</a>
+							<a href="" target="_blank" rel="noopener noreferrer">
+								<img src="./img/logo-erip.png" alt="logo-erip" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="my-3 col-12">
+					<div class="align-content-center justify-content-between w-100 row">
+						<div class="d-lg-flex align-items-center justify-content-center col-4 d-none">
+							<div class="social-divider"></div>
+						</div>
+						<div class="my-2 col-lg-3 col-md-3">
+							<div class="footer-top__section">
+								<ul class="justify-content-between social-links">
+									<li>
+										<a href="#" target="_blank">
+											<svg
+												width="33"
+												height="32"
+												viewBox="0 0 33 32"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M16.5 0C7.3873 0 0 7.16344 0 16C0 24.8366 7.3873 32 16.5 32C25.6127 32 33 24.8366 33 16C33 7.16344 25.6127 0 16.5 0ZM17.9846 15.9988V26H13.9938V15.9992H12V12.5528H13.9938V10.4835C13.9938 7.6719 15.1196 6 18.3182 6H20.9812V9.44685H19.3166C18.0715 9.44685 17.9891 9.92849 17.9891 10.8274L17.9846 12.5524H21L20.6472 15.9988H17.9846Z"
+													fill="white"
+												/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg
+												width="32"
+												height="32"
+												viewBox="0 0 32 32"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0ZM8.65057 13.2559H12.2765V24.1503H8.65057V13.2559ZM12.5157 9.8818C12.4922 8.8136 11.7283 8 10.4879 8C9.24749 8 8.43655 8.8136 8.43655 9.8818C8.43655 10.9279 9.22353 11.7649 10.4408 11.7649H10.464C11.7283 11.7649 12.5157 10.9279 12.5157 9.8818ZM21.1783 13C23.5644 13 25.3531 14.5574 25.3531 17.9037L25.353 24.1503H21.7272V18.3217C21.7272 16.8577 21.2025 15.8587 19.8899 15.8587C18.8881 15.8587 18.2915 16.5322 18.0294 17.1827C17.9335 17.4158 17.91 17.7406 17.91 18.0662V24.1506H14.2836C14.2836 24.1506 14.3314 14.2784 14.2836 13.2561H17.91V14.7992C18.3913 14.0574 19.2532 13 21.1783 13Z"
+													fill="white"
+												/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg
+												width="33"
+												height="32"
+												viewBox="0 0 33 32"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M16.5 0C7.3873 0 0 7.16344 0 16C0 24.8366 7.3873 32 16.5 32C25.6127 32 33 24.8366 33 16C33 7.16344 25.6127 0 16.5 0ZM17.103 22.6988C16.9089 22.9077 16.5299 22.9498 16.5299 22.9498H15.2747C15.2747 22.9498 12.5057 23.1165 10.0663 20.5734C7.40605 17.7987 5.05704 12.2937 5.05704 12.2937C5.05704 12.2937 4.92147 11.9326 5.06834 11.7587C5.23371 11.5622 5.68461 11.5499 5.68461 11.5499L8.6848 11.5303C8.6848 11.5303 8.96725 11.5766 9.1696 11.7258C9.33702 11.8493 9.43048 12.0787 9.43048 12.0787C9.43048 12.0787 9.91528 13.3071 10.5572 14.4181C11.8113 16.5878 12.3947 17.0621 12.8199 16.8296C13.4403 16.4911 13.2544 13.7628 13.2544 13.7628C13.2544 13.7628 13.2657 12.7731 12.9422 12.3318C12.6916 11.9902 12.2191 11.8904 12.0106 11.8626C11.8411 11.84 12.1184 11.447 12.4779 11.2711C13.0182 11.0067 13.9713 10.9913 15.0981 11.0026C15.9763 11.0118 16.2289 11.0664 16.572 11.1497C17.3682 11.3421 17.3433 11.9589 17.2897 13.2899C17.2736 13.688 17.255 14.15 17.255 14.6836C17.255 14.8035 17.2515 14.9313 17.2479 15.0628C17.2293 15.7447 17.208 16.5256 17.6566 16.8162C17.8867 16.9644 18.4485 16.8378 19.8546 14.4469C20.5212 13.3132 21.0204 11.9809 21.0204 11.9809C21.0204 11.9809 21.1303 11.7433 21.2998 11.6414C21.4734 11.5375 21.7075 11.5694 21.7075 11.5694L24.8649 11.5499C24.8649 11.5499 25.8139 11.4357 25.967 11.8657C26.1282 12.3153 25.6126 13.3667 24.3226 15.0889C23.0975 16.7247 22.502 17.3259 22.5582 17.8584C22.5991 18.2466 22.9861 18.5982 23.7279 19.2874C25.2786 20.7295 25.6942 21.4882 25.7941 21.6705C25.8024 21.6856 25.8085 21.6967 25.8129 21.704C26.5083 22.8593 25.0415 22.9498 25.0415 22.9498L22.2365 22.9889C22.2365 22.9889 21.6346 23.1083 20.8417 22.563C20.4263 22.2777 20.0204 21.8115 19.6338 21.3676C19.0435 20.6896 18.498 20.0633 18.0325 20.2112C17.2509 20.4602 17.2745 22.1464 17.2745 22.1464C17.2745 22.1464 17.2807 22.5075 17.103 22.6988Z"
+													fill="white"
+												/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="" target="_blank">
+											<svg
+												width="33"
+												height="32"
+												viewBox="0 0 33 32"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M16.5 0C7.3873 0 0 7.16344 0 16C0 24.8366 7.3873 32 16.5 32C25.6127 32 33 24.8366 33 16C33 7.16344 25.6127 0 16.5 0ZM12.1714 6.06042C13.2915 6.01188 13.6493 6 16.501 6H16.4977C19.3502 6 19.7068 6.01188 20.8268 6.06042C21.9446 6.10917 22.7081 6.27771 23.3775 6.525C24.0687 6.78021 24.6528 7.12187 25.2369 7.67812C25.8209 8.23396 26.1797 8.79187 26.4487 9.44958C26.7069 10.0854 26.8841 10.8121 26.9366 11.8767C26.9869 12.9433 27 13.2842 27 16C27 18.7158 26.9869 19.0558 26.9366 20.1225C26.8841 21.1867 26.7069 21.9135 26.4487 22.5496C26.1797 23.2071 25.8209 23.765 25.2369 24.3208C24.6534 24.8771 24.0685 25.2196 23.3781 25.475C22.71 25.7223 21.9462 25.8908 20.8283 25.9396C19.7083 25.9881 19.3515 26 16.4997 26C13.6482 26 13.2906 25.9881 12.1706 25.9396C11.053 25.8908 10.2897 25.7223 9.62166 25.475C8.9315 25.2196 8.34568 24.8771 7.76227 24.3208C7.17842 23.765 6.81966 23.2071 6.55126 22.5494C6.29182 21.9135 6.11484 21.1869 6.06344 20.1223C6.01269 19.0556 6 18.7158 6 16C6 13.2842 6.01312 12.9431 6.06322 11.8765C6.11353 10.8123 6.29072 10.0854 6.55104 9.44938C6.8201 8.79187 7.17886 8.23396 7.76292 7.67812C8.34656 7.12208 8.93237 6.78042 9.62298 6.525C10.2906 6.27771 11.0536 6.10917 12.1714 6.06042Z"
+													fill="white"
+												/>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M15.4608 8.00244C15.6388 8.00217 15.8303 8.00226 16.037 8.00234L16.3776 8.00244C19.1061 8.00244 19.4295 8.01179 20.5069 8.05856C21.5033 8.10207 22.0441 8.26108 22.4043 8.39467C22.8812 8.57157 23.2212 8.78303 23.5786 9.12463C23.9363 9.46623 24.1577 9.79156 24.3434 10.247C24.4832 10.5907 24.6499 11.1071 24.6953 12.0587C24.7443 13.0876 24.7549 13.3966 24.7549 16.0013C24.7549 18.606 24.7443 18.9151 24.6953 19.9439C24.6497 20.8955 24.4832 21.412 24.3434 21.7556C24.1582 22.2111 23.9363 22.5354 23.5786 22.8768C23.221 23.2184 22.8814 23.4299 22.4043 23.6068C22.0445 23.741 21.5033 23.8996 20.5069 23.9431C19.4297 23.9898 19.1061 24 16.3776 24C13.6488 24 13.3254 23.9898 12.2482 23.9431C11.2518 23.8991 10.7111 23.7401 10.3506 23.6066C9.87372 23.4297 9.53308 23.2182 9.17541 22.8766C8.81774 22.535 8.59633 22.2105 8.41068 21.7548C8.27081 21.4112 8.10411 20.8947 8.05876 19.9431C8.00979 18.9143 8 18.6052 8 15.9989C8 13.3926 8.00979 13.0851 8.05876 12.0563C8.10432 11.1047 8.27081 10.5882 8.41068 10.2442C8.5959 9.78871 8.81774 9.46338 9.17541 9.12178C9.53308 8.78019 9.87372 8.56872 10.3506 8.39141C10.7108 8.25722 11.2518 8.09862 12.2482 8.0549C13.1909 8.01423 13.5562 8.00203 15.4608 8V8.00244ZM21.8325 9.6226C21.1555 9.6226 20.6062 10.1466 20.6062 10.7934C20.6062 11.44 21.1555 11.9646 21.8325 11.9646C22.5095 11.9646 23.0588 11.44 23.0588 10.7934C23.0588 10.1468 22.5095 9.6226 21.8325 9.6226ZM11.1296 16.004C11.1296 13.2361 13.4793 10.9919 16.3774 10.9918C19.2756 10.9918 21.6247 13.236 21.6247 16.004C21.6247 18.7719 19.2758 21.0151 16.3776 21.0151C13.4794 21.0151 11.1296 18.7719 11.1296 16.004Z"
+													fill="white"
+												/>
+												<path
+													d="M16.4 12.6001C18.2224 12.6001 19.7 14.0775 19.7 15.9001C19.7 17.7225 18.2224 19.2001 16.4 19.2001C14.5773 19.2001 13.1 17.7225 13.1 15.9001C13.1 14.0775 14.5773 12.6001 16.4 12.6001Z"
+													fill="white"
+												/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div
+							class="d-flex align-items-center justify-content-center mt-4 mt-lg-0 pe-lg-0 col-lg-4 col-12"
+						>
+							<div class="social-divider"></div>
+						</div>
+					</div>
+				</div>
+				<div class="my-3 mt-2 col-12">
+					<div class="footer-bottom justify-content-center border-0 text-center row g-2">
+						<div class="col-12">
+							<div href="#" target="_blank" class="footer-bottom__developer">
+								Сайт разработан 2023
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+     </div>
+     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+@media only screen and (max-width: 780px) {
+  .services .services-wrapper {
+    flex-direction: column;
+    padding-bottom: 40px;
+    max-height: 100%;
+  }
+  .services .services-wrapper .services-tabs {
+    display: flex;
+    flex-direction: column;
+    padding: 27.5px 20px;
+    max-width: 100%;
+  }
+  .services .services-wrapper .services-tabs .button {
+    display: flex;
+    margin: 5px 0px;
+  }
+  .services .services-wrapper__content {
+    margin-left: 0;
+  }
+  .services .services-wrapper__content .content {
+    padding-bottom: 0;
+  }
+  .services .services-wrapper__content .content p {
+    max-width: 310px;
+  }
+  .services .services-wrapper__content .service-links-scope {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  }
+  .services .services-wrapper .content-active {
+    display: flex;
+    flex-direction: column;
+  }
+}

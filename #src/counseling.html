@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{ "title":"Консультации" })
+
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<!-- modal -->
+			<div class="modal fade" id="payModal" tabindex="-1" aria-labelledby="payModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="px-4 pt-0 pb-4 modal-body">
+							<div class="row">
+								<div class="d-flex flex-column align-items-center col-12">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="61"
+										height="60"
+										viewBox="0 0 61 60"
+										fill="none"
+									>
+										<path
+											d="M30.4998 59.7173C26.413 59.7173 22.4433 58.9377 18.7078 57.3978C15.1011 55.911 11.8614 53.7854 9.07831 51.0743C6.29524 48.3631 4.11328 45.2109 2.58708 41.6936C1.00624 38.0547 0.206055 34.1914 0.206055 30.2064C0.206055 26.2214 1.00624 22.3581 2.58708 18.7192C4.11328 15.2057 6.29524 12.0497 9.07831 9.3385C11.8614 6.62735 15.1011 4.50938 18.7078 3.02262C22.4433 1.48263 26.4091 0.703125 30.4998 0.703125C34.5904 0.703125 38.5562 1.48263 42.2917 3.02262C45.8984 4.50938 49.1381 6.63496 51.9212 9.34611C54.7043 12.0573 56.8862 15.2095 58.4124 18.7268C59.9933 22.3657 60.7935 26.229 60.7935 30.214C60.7935 34.199 59.9933 38.0623 58.4124 41.7012C56.8862 45.2147 54.7043 48.3707 51.9212 51.0819C49.1381 53.793 45.9023 55.9186 42.2917 57.4054C38.5562 58.9377 34.5865 59.7173 30.4998 59.7173ZM30.4998 3.1367C15.1753 3.1367 2.70809 15.2817 2.70809 30.2102C2.70809 45.1386 15.1753 57.2837 30.4998 57.2837C45.8242 57.2837 58.2914 45.1386 58.2914 30.2102C58.2914 15.2817 45.8242 3.1367 30.4998 3.1367Z"
+											fill="#393185"
+										/>
+										<path
+											d="M24.9881 40.7238C24.6564 40.7238 24.3402 40.5945 24.106 40.3664L16.0417 32.5105C15.5538 32.0352 15.5538 31.2633 16.0417 30.788C16.5296 30.3127 17.322 30.3127 17.8099 30.788L24.992 37.7845L43.1971 20.0498C43.6851 19.5745 44.4774 19.5745 44.9654 20.0498C45.4533 20.5251 45.4533 21.297 44.9654 21.7724L25.8742 40.3702C25.6361 40.5983 25.3199 40.7238 24.9881 40.7238Z"
+											fill="#393185"
+										/>
+									</svg>
+									<span class="mt-4"> Заявка успешно отправлена </span>
+								</div>
+								<div class="mt-3 text-center col-12">
+									Ваш заказ <strong class="color-violet">№123</strong> успешно создан. <br />
+									Инструкция для оплаты через ЕРИП была направлена Вам на почту
+									<strong>ххх@ххх.хх</strong>.
+								</div>
+								<div class="col-12">
+									<hr />
+								</div>
+								<div class="text-center col-12">
+									<strong class="fs-22 color-violet"> Оплата по дереву ЕРИП: </strong>
+								</div>
+								<div class="mt-3 col-12">
+									<div class="d-flex flex-row fs-18">
+										<div class="">
+											<strong class="color-violet">1</strong>
+										</div>
+										<div class="ms-3">
+											Выберите пункт ЕРИП в интернет-банкинге, мобильном приложении или
+											терминале.
+										</div>
+									</div>
+									<div class="d-flex flex-row mt-3 fs-18">
+										<div class="">
+											<strong class="color-violet">2</strong>
+										</div>
+										<div class="ms-3">
+											<p>Далее выберите последовательно пункты:</p>
+											<div class="d-flex flex-column">
+												<div class="">
+													<i class="bi-arrow-right me-2 bi"></i>
+													Система «Расчет» (ЕРИП);
+												</div>
+												<div class="d-flex flex-column ms-1 mt-2 ps-2">
+													<div class="">
+														<i class="bi-arrow-right me-2 bi"></i>
+														Информационные услуги;
+													</div>
+													<div class="d-flex flex-column ms-1 mt-2 ps-2">
+														<div class="">
+															<i class="bi-arrow-right me-2 bi"></i>
+															Деловая информация;
+														</div>
+														<div class="d-flex flex-column ms-1 mt-2 ps-2">
+															<div class="">
+																<i class="bi-arrow-right me-2 bi"></i>
+																111111;
+															</div>
+															<div
+																class="d-flex flex-column ms-1 mt-2 ps-2"
+															>
+																<div class="">
+																	<i
+																		class="bi-arrow-right me-2 bi"
+																	></i>
+																	Консультация.
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="d-flex flex-row mt-3 fs-18">
+										<div class="">
+											<strong class="color-violet">3</strong>
+										</div>
+										<div class="ms-3">
+											Введите код платежа для оплаты в ЕРИП:
+											<strong class="color-violet">123456789.</strong>
+										</div>
+									</div>
+									<div class="d-flex flex-row mt-3 fs-18">
+										<div class="">
+											<strong class="color-violet">4</strong>
+										</div>
+										<div class="ms-3">Проверьте корректность информации.</div>
+									</div>
+									<div class="d-flex flex-row mt-3 fs-18">
+										<div class="">
+											<strong class="color-violet">5</strong>
+										</div>
+										<div class="ms-3">Совершите платеж.</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<hr />
+								</div>
+								<div class="text-center col-12">
+									<strong class="fs-22 color-violet"> Оплата по QR-коду: </strong>
+								</div>
+								<div class="mt-3 col-12">
+									<div class="row">
+										<div class="col-sm-3">
+											<div class="qr-code qr-modal">
+												<img src="./img/qr-pay.png" alt="" />
+											</div>
+										</div>
+										<div class="col-sm-9">
+											<div class="">
+												<p>
+													Для оплаты отсканируйте QR-код в мобильном приложении
+													Вашего банка.
+												</p>
+												<p>
+													Код платежа для оплаты через систему ЕРИП:
+													<strong class="color-violet">123456789</strong>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- modal -->
+			<!-- modal 2 -->
+			<div class="modal fade" id="payModal2" tabindex="-1" aria-labelledby="payModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="px-4 pt-0 pb-4 modal-body">
+							<div class="row">
+								<div class="d-flex flex-column align-items-center col-12">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="61"
+										height="60"
+										viewBox="0 0 61 60"
+										fill="none"
+									>
+										<path
+											d="M30.4998 59.7173C26.413 59.7173 22.4433 58.9377 18.7078 57.3978C15.1011 55.911 11.8614 53.7854 9.07831 51.0743C6.29524 48.3631 4.11328 45.2109 2.58708 41.6936C1.00624 38.0547 0.206055 34.1914 0.206055 30.2064C0.206055 26.2214 1.00624 22.3581 2.58708 18.7192C4.11328 15.2057 6.29524 12.0497 9.07831 9.3385C11.8614 6.62735 15.1011 4.50938 18.7078 3.02262C22.4433 1.48263 26.4091 0.703125 30.4998 0.703125C34.5904 0.703125 38.5562 1.48263 42.2917 3.02262C45.8984 4.50938 49.1381 6.63496 51.9212 9.34611C54.7043 12.0573 56.8862 15.2095 58.4124 18.7268C59.9933 22.3657 60.7935 26.229 60.7935 30.214C60.7935 34.199 59.9933 38.0623 58.4124 41.7012C56.8862 45.2147 54.7043 48.3707 51.9212 51.0819C49.1381 53.793 45.9023 55.9186 42.2917 57.4054C38.5562 58.9377 34.5865 59.7173 30.4998 59.7173ZM30.4998 3.1367C15.1753 3.1367 2.70809 15.2817 2.70809 30.2102C2.70809 45.1386 15.1753 57.2837 30.4998 57.2837C45.8242 57.2837 58.2914 45.1386 58.2914 30.2102C58.2914 15.2817 45.8242 3.1367 30.4998 3.1367Z"
+											fill="#393185"
+										/>
+										<path
+											d="M24.9881 40.7238C24.6564 40.7238 24.3402 40.5945 24.106 40.3664L16.0417 32.5105C15.5538 32.0352 15.5538 31.2633 16.0417 30.788C16.5296 30.3127 17.322 30.3127 17.8099 30.788L24.992 37.7845L43.1971 20.0498C43.6851 19.5745 44.4774 19.5745 44.9654 20.0498C45.4533 20.5251 45.4533 21.297 44.9654 21.7724L25.8742 40.3702C25.6361 40.5983 25.3199 40.7238 24.9881 40.7238Z"
+											fill="#393185"
+										/>
+									</svg>
+									<span class="mt-4"> Заявка успешно отправлена </span>
+								</div>
+								<div class="mt-3 text-center col-12">
+									Ваш заказ <strong class="color-violet">№123</strong> успешно создан. <br />
+									Инструкция для оплаты через ЕРИП была направлена Вам на почту
+									<strong>ххх@ххх.хх</strong>.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- modal 2 -->
+			<main class="page container">
+				<section class="mt-4 mb-0 section">
+					<div class="links-line">
+						<a href="main.html">Главная</a>
+						<span class="links-line__active">/</span>
+						<a href="counseling.html" class="links-line__active">Консультации</a>
+					</div>
+				</section>
+				<section class="mt-4 section services-main">
+					<div class="main-content">
+						<h1 class="main-content__title">Заявка на консультацию</h1>
+					</div>
+					<div class="d-flex justify-content-center">
+						<form class="gap-5 col-xl-9 row counseling-form">
+							<div class="col-12">
+								<div class="px-4 accent-block">Шаг 1. Выбор услуги</div>
+								<div class="mt-4 px-4">
+									<div class="label-form">Выбор услуги</div>
+									<div class="row">
+										<div class="mt-2 radio col-md-5">
+											<input
+												id="radio-service1"
+												type="radio"
+												name="radio-service"
+												value="1"
+											/>
+											<label class="radio__label" for="radio-service1"
+												>Налоговая консультация (200 BYN)</label
+											>
+										</div>
+										<div class="mt-2 radio col-md-5">
+											<input
+												id="radio-service2"
+												type="radio"
+												name="radio-service"
+												value="2"
+											/>
+											<label class="radio__label" for="radio-service2"
+												>Бухгалтерская консультация (200 BYN)</label
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="px-4 accent-block">Шаг 2. Контактные данные</div>
+								<div class="mt-4 px-4 row">
+									<div class="col-12 row">
+										<div class="col-md-6 input error">
+											<label for="validationCustom01" class="label-form"
+												>Ваше имя</label
+											>
+											<input
+												type="text"
+												class="mt-2 form-control _required"
+												id="validationCustom01"
+												value=""
+												required
+												placeholder="Введите ваше имя"
+											/>
+											<div class="mt-1 px-3 input__text-error">
+												Поле не может быть пустым
+											</div>
+										</div>
+									</div>
+									<div class="mt-4 col-12 row">
+										<div class="my-2 col-md-6 input">
+											<label for="validationCustom02" class="label-form"
+												>Телефон</label
+											>
+											<input
+												type="text"
+												class="mt-2 form-control"
+												id="validationCustom02"
+												value=""
+												required
+												placeholder="+375 (00) 000 00 00"
+											/>
+										</div>
+										<div class="my-2 col-md-6 input">
+											<label for="validationCustom03" class="label-form">Email</label>
+											<input
+												type="text"
+												class="mt-2 form-control"
+												id="validationCustom03"
+												value=""
+												required
+												placeholder="___@__.by"
+											/>
+										</div>
+									</div>
+									<div class="mt-4 col-12 row">
+										<div class="col-12">
+											<label class="label-form">Удобный способ связи</label>
+										</div>
+										<div class="mt-2 radio col-md-2">
+											<input
+												id="radio-phone"
+												type="radio"
+												name="radio-connect"
+												value="1"
+											/>
+											<label class="radio__label" for="radio-phone">Телефон</label>
+										</div>
+										<div class="mt-2 radio col-md-4">
+											<input
+												id="radio-email"
+												type="radio"
+												name="radio-connect"
+												value="2"
+											/>
+											<label class="radio__label" for="radio-email">E-mail</label>
+										</div>
+									</div>
+									<div class="mt-4 col-12 row">
+										<div class="col-12 input">
+											<label for="validationCustom04" class="label-form"
+												>Ваше сообщение</label
+											>
+											<textarea
+												class="mt-2 form-control"
+												rows="3"
+												id="validationCustom04"
+												placeholder="Вы можете оставить свой вопрос здесь"
+											></textarea>
+										</div>
+									</div>
+									<script>
+										var currentValue = 1;
+										function handleClick(myRadio) {
+											if (myRadio.value == 1) {
+												document.querySelector('#radiosPay').classList.add('show');
+											} else {
+												document
+													.querySelector('#radiosPay')
+													.classList.remove('show');
+												radio - pay;
+											}
+											currentValue = myRadio.value;
+										}
+									</script>
+									<div class="mt-4 col-12 row">
+										<div class="col-12">
+											<label class="label-form"
+												>Ваша организационно-правовая форма</label
+											>
+										</div>
+										<div class="mt-2 radio col-lg-2">
+											<input
+												id="radio-type1"
+												type="radio"
+												name="radio-type"
+												onclick="handleClick(this);"
+												value="1"
+											/>
+											<label class="radio__label" for="radio-type1">Организация</label>
+										</div>
+										<div class="mt-2 radio col-lg-4">
+											<input
+												id="radio-type2"
+												type="radio"
+												name="radio-type"
+												onclick="handleClick(this);"
+												value="2"
+											/>
+											<label class="radio__label" for="radio-type2"
+												>Физическое лицо или ИП</label
+											>
+										</div>
+									</div>
+									<div class="collapse mt-4 col-12 row" id="radiosPay">
+										<div class="col-12">
+											<label class="label-form">Способ оплаты</label>
+										</div>
+										<div class="mt-2 radio col-lg-4">
+											<input id="radio-pay1" type="radio" name="radio-pay" value="1" />
+											<label class="radio__label" for="radio-pay1"
+												>Оплата по счету-фактуре</label
+											>
+										</div>
+										<div class="mt-2 radio col-lg-4">
+											<input id="radio-pay2" type="radio" name="radio-pay" value="2" />
+											<label class="radio__label" for="radio-pay2">Через ЕРИП</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="px-4 accent-block">Шаг 3. Выбор дата и времени для записи</div>
+								<div class="mt-4 px-4 row">
+									<div class="col-12 row">
+										<div class="my-2 col-md-6 input">
+											<label for="counselingDate" class="label-form"
+												>Выбрать дату</label
+											>
+											<input
+												type="date"
+												class="mt-2 form-control"
+												id="counselingDate"
+												required
+											/>
+										</div>
+										<div class="my-2 col-md-6 input">
+											<label for="validationCustom06" class="label-form"
+												>Выбрать время</label
+											>
+											<select
+												class="mt-2 form-control"
+												aria-label="Default select example"
+											>
+												<option selected>Выбрать время</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</select>
+										</div>
+									</div>
+									<script>
+										var today = new Date().toISOString().split('T')[0];
+										document.getElementById('counselingDate').setAttribute('min', today);
+									</script>
+									<div class="mt-4 col-12 row">
+										<div class="col-12 input">
+											<label for="validationCustom04" class="label-form"
+												>Сообщите нам, если вы не нашли удобное для вас время
+												консультации</label
+											>
+											<textarea
+												class="mt-2 form-control"
+												rows="4"
+												id="validationCustom04"
+												placeholder="Укажите удобное для вас время консультации и мы сообщим вам, если данное время освободиться"
+											></textarea>
+										</div>
+									</div>
+									<div class="mt-5 col-12">
+										<div class="checkbox">
+											<input type="checkbox" id="personalData" class="_required" />
+											<label class="checkbox__label" for="personalData">
+												<span class="checkbox__label_text"
+													>Согласие на обработку
+													<a href="#" target="_blank"
+														>персональных данных</a
+													></span
+												>
+											</label>
+										</div>
+										<div class="mt-3 checkbox">
+											<input type="checkbox" id="personalData2" class="_required" />
+											<label class="checkbox__label" for="personalData2">
+												<span class="checkbox__label_text"
+													>Согласен с условиями
+													<a href="#" target="_blank">публичной офферты</a>
+												</span>
+											</label>
+										</div>
+									</div>
+									<div class="mt-5 col-12 row">
+										<div class="col-md-6">
+											<button
+												class="w-100 button"
+												data-bs-toggle="modal"
+												data-bs-target="#payModal"
+											>
+												Отправить заявку
+											</button>
+										</div>
+										<div class="col-md-6">
+											<button
+												class="w-100 button"
+												data-bs-toggle="modal"
+												data-bs-target="#payModal2"
+											>
+												Отправить заявку 2
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+			</main>
+
+			@@include('_footer.html',{})
+		</div>
+		@@include('_js.html',{})
+	</body>
+</html>

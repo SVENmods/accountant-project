@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Услуги"
+})
+
+<body>
+     <div class="wrapper">
+          @@include('_header.html',{})
+          <main class="page container">
+               <!-- modal -->
+               <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                         <div class="modal-content">
+                              <div class="modal-header">
+                                   <h5 class="modal-title ms-0 ps-1" id="formModalLabel">
+                                        Оставьте заявку
+                                   </h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body px-4 pb-4 pt-0">
+                                   <form action="/" id="feedbackForm" class="feedback-form">
+                                        <div class="mb-4">
+                                             <div class="input error">
+                                                  <label class="feedback-label" for="name">Ваше имя</label>
+                                                  <input type="text" id="name" name="name" class="_required"
+                                                       placeholder="Иван Иванович">
+                                                  <div class="input__text-error">Поле не может быть пустым</div>
+                                             </div>
+                                        </div>
+                                        <div class="mb-4">
+                                             <div class="feedback-label mb-0">Удобный способ связи</div>
+                                             <div class="d-flex flex-wrap">
+                                                  <div class="radio mt-3 me-4">
+                                                       <input id="radio-phone" type="radio" name="radio" value="1"
+                                                            checked>
+                                                       <label class="radio__label" for="radio-phone">Телефон</label>
+                                                  </div>
+                                                  <div class="radio mt-3 me-4">
+                                                       <input id="radio-email" type="radio" name="radio" value="2">
+                                                       <label class="radio__label" for="radio-email">E-mail</label>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="mb-4">
+                                             <div class="input">
+                                                  <label class="feedback-label" for="phone">Телефон для связи</label>
+                                                  <input type="phone" id="phone" name="phone" class="_required"
+                                                       placeholder="+375 (00) 000 00 00">
+                                                  <div class="input__text-error">Поле не может быть пустым</div>
+                                             </div>
+                                        </div>
+                                        <div class="mb-4">
+                                             <div class="textarea">
+                                                  <label class="feedback-label" for="question">Ваше сообщение</label>
+                                                  <textarea name="question" id="question"
+                                                       placeholder="Вы можете оставить свой вопрос здесь"></textarea>
+                                             </div>
+                                        </div>
+                                        <div class="mb-4">
+                                             <div class="checkbox">
+                                                  <input type="checkbox" id="personal-data" class="_required">
+                                                  <label class="checkbox__label" for="personal-data">
+                                                       <span class="checkbox__label_text">Согласие на обработку <a
+                                                                 href="#" target="_blank">персональных данных</a></span>
+                                                  </label>
+                                             </div>
+                                        </div>
+                                        <div class="feedback-form__button">
+                                             <button type="submit" class="button w-100">Отправить запрос</button>
+                                        </div>
+                                   </form>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <!-- modal -->
+               <section class="section mt-4" style="margin-bottom: 0;">
+                    <div class="links-line">
+                         <a href="main.html">Главная</a>
+                         <span class="links-line__active">/</span>
+                         <a href="services-main.html" class="links-line__active">Услуги</a>
+                    </div>
+               </section>
+               <section class="section mt-4 services-main">
+                    <div class="main-content">
+                         <h1 class="main-content__title">Услуги</h1>
+                    </div>
+                    <div class="services-scope w-100">
+                         <div class="services-block w-100" onclick="window.open('services.html', '_self');">
+                              <div>
+                                   <div class="services-block__title">Для юридических лиц</div>
+                                   <div class="services-block__text">
+                                        Вы получаете консультационные услуги бухгалтерского учета на должном уровне,
+                                        сокращение и контроль текущих расходов, рациональное распределение рисков,
+                                        модернизацию ведения учета, расширение возможностей организации.
+                                   </div>
+                              </div>
+                              <div class="w-100 d-flex justify-content-end">
+                                   <a href="services.html" class="link-all"
+                                        onclick="window.open('services.html', '_self');">Перейти<i
+                                             class="bi bi-arrow-up-right ms-3"></i></a>
+                              </div>
+                         </div>
+                         <div class="services-block w-100" onclick="window.open('services.html', '_self');">
+                              <div>
+                                   <div class="services-block__title">Для ИП и физических лиц</div>
+                                   <div class="services-block__text">
+                                        Вы получаете консультационные услуги бухгалтерского учета на должном уровне,
+                                        сокращение и контроль текущих расходов, рациональное распределение рисков,
+                                        модернизацию ведения учета, расширение возможностей организации.
+                                   </div>
+                              </div>
+                              <div class="w-100 d-flex justify-content-end">
+                                   <a href="services.html" class="link-all"
+                                        onclick="window.open('services.html', '_self');">Перейти<i
+                                             class="bi bi-arrow-up-right ms-3"></i></a>
+                              </div>
+                         </div>
+                         <div class="services-block w-100" onclick="window.open('services.html', '_self');">
+                              <div>
+                                   <div class="services-block__title">Для иностранных предприятий</div>
+                                   <div class="services-block__text">
+                                        Вы получаете консультационные услуги бухгалтерского учета на должном уровне,
+                                        сокращение и контроль текущих расходов, рациональное распределение рисков,
+                                        модернизацию ведения учета, расширение возможностей организации.
+                                   </div>
+                              </div>
+                              <div class="w-100 d-flex justify-content-end">
+                                   <a href="services.html" class="link-all"
+                                        onclick="window.open('services.html', '_self');">Перейти<i
+                                             class="bi bi-arrow-up-right ms-3"></i></a>
+                              </div>
+                         </div>
+                         <div class="services-block w-100" onclick="window.open('services.html', '_self');">
+                              <div>
+                                   <div class="services-block__title">Подготовка и сдача отчетностей</div>
+                                   <div class="services-block__text">
+                                        Вы получаете консультационные услуги бухгалтерского учета на должном уровне,
+                                        сокращение и контроль текущих расходов, рациональное распределение рисков,
+                                        модернизацию ведения учета, расширение возможностей организации.
+                                   </div>
+                              </div>
+                              <div class="w-100 d-flex justify-content-end">
+                                   <a href="services.html" class="link-all"
+                                        onclick="window.open('services.html', '_self');">Перейти<i
+                                             class="bi bi-arrow-up-right ms-3"></i></a>
+                              </div>
+                         </div>
+                         <div class="services-block w-100" onclick="window.open('services.html', '_self');">
+                              <div>
+                                   <div class="services-block__title">Прочие услуги</div>
+                                   <div class="services-block__text">
+                                        Вы получаете консультационные услуги бухгалтерского учета на должном уровне,
+                                        сокращение и контроль текущих расходов, рациональное распределение рисков,
+                                        модернизацию ведения учета, расширение возможностей организации.
+                                   </div>
+                              </div>
+                              <div class="w-100 d-flex justify-content-end">
+                                   <a href="services.html" class="link-all"
+                                        onclick="window.open('services.html', '_self');">Перейти<i
+                                             class="bi bi-arrow-up-right ms-3"></i></a>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+          </main>
+          @@include('_footer.html',{})
+     </div>
+     @@include('_js.html',{})
+</body>
+
+</html>

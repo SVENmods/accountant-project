@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Услуги для юридических лиц"
+})
+
+<body>
+     <div class="wrapper">
+          @@include('_header.html',{})
+          <main class="page">
+               <!-- modal -->
+               <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                         <div class="modal-content">
+                              <div class="modal-header">
+                                   <h5 class="modal-title ms-0 ps-1" id="formModalLabel">
+                                        Оставьте заявку
+                                   </h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body px-4 pb-4 pt-0">
+                                   <form action="/" id="feedbackForm" class="feedback-form">
+                                        <div class="mb-4">
+                                             <div class="input error">
+                                                  <label class="feedback-label" for="name">Ваше имя</label>
+                                                  <input type="text" id="name" name="name" class="_required"
+                                                       placeholder="Иван Иванович">
+                                                  <div class="input__text-error">Поле не может быть пустым</div>
+                                             </div>
+                                        </div>
+                                        <div class="mb-4">
+                                             <div class="feedback-label mb-0">Удобный способ связи</div>
+                                             <div class="d-flex flex-wrap">
+                                                  <div class="radio mt-3 me-4">
+                                                       <input id="radio-phone" type="radio" name="radio" value="1"
+                                                            checked>
+                                                       <label class="radio__label" for="radio-phone">Телефон</label>
+                                                  </div>
+                                                  <div class="radio mt-3 me-4">
+                                                       <input id="radio-email" type="radio" name="radio" value="2">
+                                                       <label class="radio__label" for="radio-email">E-mail</label>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="mb-4">
+                                             <div class="input">
+                                                  <label class="feedback-label" for="phone">Телефон для связи</label>
+                                                  <input type="phone" id="phone" name="phone" class="_required"
+                                                       placeholder="+375 (00) 000 00 00">
+                                                  <div class="input__text-error">Поле не может быть пустым</div>
+                                             </div>
+                                        </div>
+                                        <div class="mb-4">
+                                             <div class="textarea">
+                                                  <label class="feedback-label" for="question">Ваше сообщение</label>
+                                                  <textarea name="question" id="question"
+                                                       placeholder="Вы можете оставить свой вопрос здесь"></textarea>
+                                             </div>
+                                        </div>
+                                        <div class="mb-4">
+                                             <div class="checkbox">
+                                                  <input type="checkbox" id="personal-data" class="_required">
+                                                  <label class="checkbox__label" for="personal-data">
+                                                       <span class="checkbox__label_text">Согласие на обработку <a
+                                                                 href="#" target="_blank">персональных данных</a></span>
+                                                  </label>
+                                             </div>
+                                        </div>
+                                        <div class="feedback-form__button">
+                                             <button type="submit" class="button w-100">Отправить запрос</button>
+                                        </div>
+                                   </form>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <!-- modal -->
+               <section class="section container mt-4" style="margin-bottom: 0;">
+                    <div class="links-line">
+                         <a href="main.html">Главная</a>
+                         <span>/</span>
+                         <a href="services-main.html">Услуги</a>
+                         <span class="links-line__active">/</span>
+                         <a class="links-line__active">Услуги для юридических лиц</a>
+                    </div>
+               </section>
+               <section class="section reviews services container mt-4">
+                    <div class="main-content">
+                         <h1 class="main-content__title">Услуги для юридических лиц</h1>
+                    </div>
+                    <div class="reviews__body w-100">
+                         <div class="reviews__wrapper justify-content-between">
+                              <div class="reviews__content pt-4 ps-3 pb-3 pe-5  mt-3 me-2" type="button"
+                                   data-bs-toggle="modal" data-bs-target="#formModal">
+                                   <div id="1"
+                                        class="reviews__block d-flex flex-column jusify-content-between h-100 pb-4">
+                                        <div class="reviews__text col mt-2 ms-2">
+                                             <h2>Постановка бухгалтерского и налогового учета</h2>
+                                             <div class="w-100 jusify-content-between row mt-4">
+                                                  <div class="col-md-6 d-flex flex-row align-items-start">
+                                                       <h3>УСН</h3>
+                                                       <span class="ms-3">от 255 BYN</span>
+                                                  </div>
+                                                  <div class="col-md-6 d-flex flex-row align-items-start">
+                                                       <h3>ОСН</h3>
+                                                       <span class="ms-3">от 440 BYN</span>
+                                                  </div>
+                                             </div>
+                                             <p class="mt-3">
+                                                  <span>Включает в себя:</span>
+                                             <ul>
+                                                  <li>Выбор оптимальной системы налогообложения</li>
+                                                  <li>Разработка учетной политики</li>
+                                                  <li>Организация документооборота</li>
+                                                  <li>Помощь в получении ключа ЭЦП и бланков</li>
+                                                  <li>Организация персонифицированного учета</li>
+                                             </ul>
+                                             </p>
+
+                                        </div>
+                                        <div id="links" class="ms-2">
+                                             <div class="">
+                                                  <a class="link-all" type="button" data-bs-toggle="modal"
+                                                       data-bs-target="#formModal">Оставить
+                                                       заявку<i class="bi bi-arrow-up-right ms-3"></i></a>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div id="2" class="reviews__content pt-4 ps-3 pb-3 pe-5  mt-3 me-2" type="button"
+                                   data-bs-toggle="modal" data-bs-target="#formModal">
+                                   <div class="reviews__block d-flex flex-column jusify-content-between h-100 pb-4">
+                                        <div class="reviews__text col mt-2 ms-2">
+                                             <h2>Комплексный бухгалтерский аутсорсинг</h2>
+                                             <div class="w-100 jusify-content-between row mt-4">
+                                                  <div class="col-md-6 d-flex flex-row align-items-start">
+                                                       <h3>УСН</h3>
+                                                       <span class="ms-3">от 400 BYN</span>
+                                                  </div>
+                                                  <div class="col-md-6 d-flex flex-row align-items-start">
+                                                       <h3>ОСН</h3>
+                                                       <span class="ms-3">от 580 BYN</span>
+                                                  </div>
+                                             </div>
+                                             <p class="mt-3">
+                                                  <span>Включает в себя:</span>
+                                             <ul>
+                                                  <li>Обработка первичных документов</li>
+                                                  <li>Расчет заработной платы</li>
+                                                  <li>Проведение банковских платежей</li>
+                                                  <li>Подача отчетности</li>
+                                                  <li>Подготовка отчета о финансовых результатах компании</li>
+                                             </ul>
+                                             </p>
+
+                                        </div>
+                                        <div id="links" class="ms-2">
+                                             <div class="">
+                                                  <a type="button" data-bs-toggle="modal" data-bs-target="#formModal"
+                                                       class="link-all">Оставить
+                                                       заявку<i class="bi bi-arrow-up-right ms-3"></i></a>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div id="3" class="reviews__content pt-4 ps-3 pb-3 pe-5  mt-3 me-2" type="button"
+                                   data-bs-toggle="modal" data-bs-target="#formModal">
+                                   <div class="reviews__block d-flex flex-column jusify-content-between h-100 pb-4">
+                                        <div class="reviews__text col mt-2 ms-2">
+                                             <h2>Услуги главного бухгалтера</h2>
+                                             <div class="w-100 jusify-content-between row mt-4">
+                                                  <div class="col-md-6 d-flex flex-row align-items-start">
+                                                       <h3>УСН</h3>
+                                                       <span class="ms-3">от 270 BYN</span>
+                                                  </div>
+                                                  <div class="col-md-6 d-flex flex-row align-items-start">
+                                                       <h3>ОСН</h3>
+                                                       <span class="ms-3">от 450 BYN</span>
+                                                  </div>
+                                             </div>
+                                             <p class="mt-3">
+                                                  <span>Включает в себя:</span>
+                                             <ul>
+                                                  <li>Контроль первичного бухгалтера</li>
+                                                  <li>Расчет заработной платы</li>
+                                                  <li>Подготовка и подача отчетности</li>
+                                                  <li>Консультации по деятельности компании</li>
+                                                  <li>Общение с контролирующими органами</li>
+                                             </ul>
+                                             </p>
+
+                                        </div>
+                                        <div id="links" class="ms-2">
+                                             <div class="">
+                                                  <a type="button" data-bs-toggle="modal" data-bs-target="#formModal"
+                                                       class="link-all">Оставить
+                                                       заявку<i class="bi bi-arrow-up-right ms-3"></i></a>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div id="4" class="reviews__content pt-4 ps-3 pb-3 pe-5  mt-3 me-2" type="button"
+                                   data-bs-toggle="modal" data-bs-target="#formModal">
+                                   <div class="reviews__block d-flex flex-column jusify-content-between h-100 pb-4">
+                                        <div class="reviews__text col mt-2 ms-2">
+                                             <h2>Экспертиза бухгалтерского учета</h2>
+                                             <div class="w-100 jusify-content-between row mt-4">
+                                                  <div class="col-md-6 d-flex flex-row align-items-start">
+                                                       <h3>УСН</h3>
+                                                       <span class="ms-3">от 100 BYN</span>
+                                                  </div>
+                                                  <div class="col-md-6 d-flex flex-row align-items-start">
+                                                       <h3>ОСН</h3>
+                                                       <span class="ms-3">от 150 BYN</span>
+                                                  </div>
+                                             </div>
+                                             <p class="mt-3">
+                                                  <span>Включает в себя:</span>
+                                             <ul>
+                                                  <li>Анализ бухгалтерского учета предприятия</li>
+                                                  <li>Выявление возможных ошибок</li>
+                                                  <li>Проведение банковских платежей</li>
+                                                  <li>Оценка возможных последствий для собственника бизнеса</li>
+                                                  <li>Проверка на соответсвие бухгалтерской и налоговой отчетности
+                                                       данным учета</li>
+                                             </ul>
+                                             </p>
+
+                                        </div>
+                                        <div id="links" class="ms-2">
+                                             <div class="">
+                                                  <a type="button" data-bs-toggle="modal" data-bs-target="#formModal"
+                                                       class="link-all">Оставить
+                                                       заявку<i class="bi bi-arrow-up-right ms-3"></i></a>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div id="5" class="reviews__content pt-4 ps-3 pb-3 pe-5  mt-3 me-2" type="button"
+                                   data-bs-toggle="modal" data-bs-target="#formModal">
+                                   <div class="reviews__block d-flex flex-column jusify-content-between h-100 pb-4">
+                                        <div class="reviews__text col mt-2 ms-2">
+                                             <h2>Расчет заработной платы</h2>
+                                             <div class="w-100 jusify-content-between row mt-4">
+                                                  <div class="col-md-6 d-flex flex-row align-items-start">
+                                                       <h3>УСН</h3>
+                                                       <span class="ms-3">от 12 BYN</span>
+                                                  </div>
+
+                                             </div>
+                                             <p class="mt-3">
+                                                  <span>Включает в себя:</span>
+                                             <ul>
+                                                  <li>Разработка системы оплаты труда</li>
+                                                  <li>Разработка системы оплаты труда Расчет заработной платы
+                                                       сотрудников</li>
+                                                  <li>Составление штатного расписания</li>
+                                                  <li>Расчет отпускных и пособий</li>
+                                                  <li>Предоставление форм персонифицированного учета и отчетности в ФОНД
+                                                  </li>
+                                             </ul>
+                                             </p>
+
+                                        </div>
+                                        <div id="links" class="ms-2">
+                                             <div class="">
+                                                  <a type="button" data-bs-toggle="modal" data-bs-target="#formModal"
+                                                       class="link-all">Оставить
+                                                       заявку<i class="bi bi-arrow-up-right ms-3"></i></a>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div id="6" class="reviews__content pt-4 ps-3 pb-3 pe-5  mt-3 me-2" type="button"
+                                   data-bs-toggle="modal" data-bs-target="#formModal">
+                                   <div class="reviews__block d-flex flex-column jusify-content-between h-100 pb-4">
+                                        <div class="reviews__text col mt-2 ms-2 h-100">
+                                             <div class="reviews__text-content">
+                                                  <div>
+                                                       <h2>Консультирование</h2>
+
+                                                       <div class="w-100 jusify-content-between row mt-4">
+                                                            <div class="col-md-6 d-flex flex-row align-items-start">
+                                                                 <h3>УСН</h3>
+                                                                 <span class="ms-3">от 400 BYN</span>
+                                                            </div>
+                                                            <div class="col-md-6 d-flex flex-row align-items-start">
+                                                                 <h3>ОСН</h3>
+                                                                 <span class="ms-3">от 580 BYN</span>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+
+                                                  <p class="mt-3">
+                                                       <span>Включает в себя:</span>
+                                                  <ul>
+                                                       <li>Комплексные, уже работающие решения для вашего бизнеса</li>
+                                                       <li>Услуги налогового консультанта</li>
+                                                       <li>Подача запросов в налоговые органы</li>
+                                                       <li>Консультации по налогам и финансово-хозяйственной
+                                                            деятельности
+                                                       </li>
+                                                  </ul>
+                                                  </p>
+                                             </div>
+
+
+                                        </div>
+                                        <div id="links" class="ms-2">
+                                             <div class="">
+                                                  <a type="button" data-bs-toggle="modal" data-bs-target="#formModal"
+                                                       class="link-all">Оставить
+                                                       заявку<i class="bi bi-arrow-up-right ms-3"></i></a>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+          </main>
+          @@include('_footer.html',{})
+     </div>
+     @@include('_js.html',{})
+</body>
+
+</html>
